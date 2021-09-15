@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'website/base.html' %}
+{% block main %}
+
+    <div class = "comment-creation">
+        <h2 class="post-comment">Post a comment about our website!</h2>
+        <form class = "comment-form" action="{% url 'website:create_comment' %}" method="post" >
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Create">
+        </form>
+    </div>
+
+{% endblock %}
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'website/base.html' %}
+
+{% block main %}
+    <section class="intro" style="background-image: url('../../static/website/images/introimg1.jpg')">
+                <h1>Welcome <br> to <br> BKSIM!</h1>
+                <h2>Here, you will be able to create from scrath your dream bike build, piece by piece </h2>
+            </section>
+
+            <article class="choosetype">
+                <h4> Wich type of bike are you building today?</h4>
+            </article>
+
+            <section class="tiposB">
+               <a href="/mtb">
+                   <article class="MTB">
+                       <h3>MTB</h3>
+                    </article>
+               </a>
+               <a href="/road">
+                   <article class="Road Bike">
+                       <h3>ROAD BIKE</h3>
+                    </article>
+                </a>
+
+                <a href="/bmx">
+                    <article class="BMX">
+                         <h3>BMX</h3>
+                        </article>
+                </a>
+
+            </section>
+            <section class="imgtypes">
+                <article>
+                    <h6><img src="../../static/website/images/imgMTB.jpg" alt="MTB" width=100% height="140"></h6>
+                </article>
+                <article>
+                    <h6><img src="../../static/website/images/imgROAD.jgp.jpg" alt="ROAD" width=100% height="140"></h6>
+                </article>
+
+                <article>
+                    <h6><img src="../../static/website/images/imgBMX.jpg" alt="BMX" width=100% height="140"></h6>
+                </article>
+
+            </section>
+
+            <section class="buildinfo">
+                <h7>TESTE</h7>
+            </section>
+{% endblock %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'website/base.html' %}
+
+{% block main %}
+
+    <br>
+    <h2 class="list">Comments List</h2>
+    <a class="post"  href="/create-comment">Post a comment!</a>
+    <div class = "comments">
+    {% for comment in comments%}
+        <div class = "comment">
+            <h1><a href="#">{{  comment.title }}</a></h1>
+            <p>{{ comment.snippet }}</p>
+            <p>{{ comment.date }}</p>
+            <p class="author">Posted by {{ comment.author }}</p>
+        </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}
+</html>

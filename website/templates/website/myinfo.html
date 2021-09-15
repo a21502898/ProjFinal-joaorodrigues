@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'website/base.html' %}
+{% block main %}
+    <center>
+        <h1 class="add-data-title">Add you info here!</h1>
+
+        {% if submitetd %}
+            Your info was submitted Succesfully!
+        {% else %}
+
+             <form class="add-data" action="" method="POST">
+                 {% csrf_token %}
+                 {{ form.as_p }}
+                 <input type="submit" value="Submit" class="btn btn-secondary">
+             </form>
+        {% endif %}
+    </center>
+{% endblock %}
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'website/base.html' %}
+{% block main %}
+  <h2 class="sng-here">Sign up Here!</h2>
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{message}}</p>
+        {% endfor %}
+    {% endif %}
+  <form class ="signup"  method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+</form>
+{% endblock %}
+</html>
