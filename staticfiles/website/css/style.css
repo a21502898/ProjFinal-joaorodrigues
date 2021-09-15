@@ -20,7 +20,7 @@ main{
 
 header{
     position:fixed;
-    background-color: #fff;
+    background-color: black;
     width: calc(100% - 10px);
     height: fit-content;
     padding: 10px;
