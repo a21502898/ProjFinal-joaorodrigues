@@ -8,6 +8,7 @@ from django.http import HttpResponse
 
 app_name = "website"
 
+
 urlpatterns = [
     path('', views.base_page_view),
     path('home', views.home_page_view),
@@ -23,3 +24,6 @@ urlpatterns = [
 
 
 ]
+
+
+
