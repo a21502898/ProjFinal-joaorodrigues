@@ -21,6 +21,7 @@ urlpatterns = [
     path('myinfo', views.myinfo_page_view),
     path('create-comment', views.create_comment_page_view, name='create_comment'),
     path('comment-list', views.comments_list_page_view, name='comment-list'),
+    path('bmxbrakes', views.bmxbrakes_page_view),
 
 
 ]

@@ -81,3 +81,9 @@ def road_page_view(request):
 def bmx_page_view(request):
     return render(request, 'website/RB/RBPage.html', )
 
+def bmxbrakes_page_view(request):
+    return render(request, 'website/BMX/brakesBMX.html', )
+
+
+
+
